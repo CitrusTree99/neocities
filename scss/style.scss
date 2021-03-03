@@ -1,0 +1,111 @@
+// Google Fonts Import
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+// Color Variables
+
+$foreground: #f0f0f0;
+$background: #756365;
+
+$base-orange: #dc8c69;
+
+$dark-orange: #c77350;
+
+// Dark Brown: #756365
+// Copper Orange: #dc8c69
+// Dark White: #abacb6
+// Very Light Orange: #edc4a6
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    background-color: $background;
+    color: $foreground;
+    background-image: url("/img/bg.png");
+}
+
+nav {
+    width: 100%;
+    background: $dark-orange;
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Inter', sans-serif;
+
+    a {
+        text-decoration: none;
+    }
+
+    div {
+        padding: .5rem;
+        background: $dark-orange;
+    }
+
+    div:nth-child(2) {background: $base-orange;}
+
+}
+
+p {
+    padding: 0;
+    font-family: 'Noto Serif', serif;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: $foreground;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    color: $foreground;
+    text-decoration: underline wavy;
+}
+
+#wrapper {
+    max-width: 40rem;
+    margin: 2rem auto;
+    //background: red;
+}
+
+#license {
+    text-align: center;
+    font-size: 12px;
+
+    a {
+        text-decoration: underline dotted;
+    }
+}
+
+.box {
+    background: $base-orange;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: thick double $dark-orange;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+
+    p {
+        margin: 1rem;
+    }
+}
+
+.comment {
+    font-size: .7rem;
+}
+
+.crossed {
+    text-decoration: line-through;
+}
