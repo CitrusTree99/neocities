@@ -25,7 +25,7 @@ nav div {
   padding: 0.5rem;
   background: #c77350;
 }
-nav div:nth-child(2) {
+nav .current {
   background: #dc8c69;
 }
 
